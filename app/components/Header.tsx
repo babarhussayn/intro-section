@@ -12,6 +12,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const simpleLink = [
   {
@@ -28,20 +30,63 @@ export function Header() {
   return (
     <>
       <div className="w-full ">
-        <div className="flex justify-center items-center gap-8 p-4">
+        <div className="flex justify-center items-center gap-8 p-6">
           <div className="w-full flex justify-start items-center gap-8">
-            Logo
+            <div>
+              <Image
+                src="/images/logo.svg"
+                alt="logo"
+                width={100}
+                height={50}
+              />
+            </div>
             <div className="">
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Features</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="grid gap-3 p-6  ">
-                        <li className="">Todo List</li>
-                        <li>Calendar</li>
-                        <li>Reminders</li>
-                        <li>Planing</li>
+                      <ul className="grid gap-3 p-6 w-[150px] justify-center items-center">
+                        <li className="flex justify-center items-center gap-4">
+                          <div></div>
+                          <Image
+                            src="/images/icon-todo.svg"
+                            alt="todo"
+                            width={20}
+                            height={30}
+                          />{" "}
+                          <h4 className="">Todo</h4>
+                        </li>
+                        <li className="flex justify-center items-center gap-4">
+                          {" "}
+                          <Image
+                            src="/images/icon-calendar.svg"
+                            alt="todo"
+                            width={20}
+                            height={30}
+                          />{" "}
+                          Calendar
+                        </li>
+                        <li className="flex justify-center items-center gap-4">
+                          {" "}
+                          <Image
+                            src="/images/icon-reminders.svg"
+                            alt="todo"
+                            width={20}
+                            height={30}
+                          />
+                          <p> Reminders</p>
+                        </li>
+                        <li className="flex justify-center items-center gap-4">
+                          {" "}
+                          <Image
+                            src="/images/icon-planning.svg"
+                            alt="todo"
+                            width={20}
+                            height={30}
+                          />
+                          <p> Planing</p>
+                        </li>
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
@@ -74,8 +119,16 @@ export function Header() {
           </div>
           <div className="w-full">
             <div className="flex justify-end items-center gap-8">
-              <div>login</div>
-              <div>signin</div>
+              <div>
+                <Button className="bg-white text-black hover:bg-white">
+                  Login
+                </Button>
+              </div>
+              <div>
+                <Button className="bg-white text-black border border-black hover:text-white ">
+                  Register
+                </Button>
+              </div>
             </div>
           </div>
         </div>

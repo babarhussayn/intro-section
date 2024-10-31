@@ -1,0 +1,88 @@
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import React from "react";
+
+interface ImagesLogo {
+  name: string;
+  src: string;
+}
+
+const imageslogo: ImagesLogo[] = [
+  {
+    name: "datbiz",
+    src: "/images/client-databiz.svg",
+  },
+  {
+    name: "audio",
+    src: "/images/client-audiophile.svg",
+  },
+  {
+    name: "meet",
+    src: "/images/client-meet.svg",
+  },
+  {
+    name: "maker",
+    src: "/images/client-maker.svg",
+  },
+];
+
+const HomePage = () => {
+  return (
+    <div className="w-full flex justify-center items-center  mt-8">
+      <div className=" w-[1400px]">
+        <div className="flex justify-center items-center ">
+          <div className="grid grid-cols-2 gap-8 w-full">
+            <div className="">
+              <div className="w-full flex  flex-col gap-8">
+                <div className="">
+                  <div className="">
+                    <h3 className="text-7xl text-start">Make </h3>
+                    <p className="text-7xl text-start">remote work</p>
+                  </div>
+                </div>
+                <div className="flex justify-start items-center w-full">
+                  <div className="w-[500px] flex justify-end items-center">
+                    <p className="text-lg text-start">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Sapiente autem amet eum distinctio, magnam vitae debitis
+                      possimus hic officiis culpa. Numquam exercitationem ullam
+                      vitae veritatis?
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <Button>Learn more</Button>
+                </div>
+                <div className="flex justify-center items-center gap-8 mt-16 flex-row">
+                  <div className="flex justify-center items-center gap-8">
+                    {imageslogo.map((items, index) => (
+                      <Image
+                        src={items.src}
+                        alt="imges"
+                        width={150}
+                        height={50}
+                        key={index}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex justify-center items-center">
+              <div className="w-full flex justify-center items-center">
+                <Image
+                  src="/images/image-hero-desktop.png"
+                  alt="main-image"
+                  width={500}
+                  height={100}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HomePage;
