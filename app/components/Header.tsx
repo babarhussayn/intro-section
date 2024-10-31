@@ -44,7 +44,9 @@ export function Header() {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>Features</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-[#adadad] font-bold">
+                      Features
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid gap-3 p-6 w-[150px] justify-center items-center">
                         <li className="flex justify-center items-center gap-4">
@@ -91,7 +93,9 @@ export function Header() {
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>Company</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-[#adadad] font-bold">
+                      Company
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid gap-3 p-6 ">
                         <li>History</li>
@@ -107,7 +111,10 @@ export function Header() {
                           <NavigationMenuLink
                             className={navigationMenuTriggerStyle()}
                           >
-                            {item.name}
+                            <h3 className="text-[#adadad] font-bold">
+                              {" "}
+                              {item.name}
+                            </h3>
                           </NavigationMenuLink>
                         </Link>
                       </div>
@@ -120,12 +127,12 @@ export function Header() {
           <div className="w-full">
             <div className="flex justify-end items-center gap-8">
               <div>
-                <Button className="bg-white text-black hover:bg-white">
+                <Button className="bg-white text-[#adadad] hover:bg-white">
                   Login
                 </Button>
               </div>
               <div>
-                <Button className="bg-white text-black border border-black hover:text-white ">
+                <Button className="bg-white text-[#adadad] border border-black hover:text-white ">
                   Register
                 </Button>
               </div>

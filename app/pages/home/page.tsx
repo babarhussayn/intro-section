@@ -31,22 +31,21 @@ const HomePage = () => {
     <div className="w-full flex justify-center items-center  mt-8">
       <div className=" w-[1400px]">
         <div className="flex justify-center items-center ">
-          <div className="grid grid-cols-2 gap-8 w-full">
-            <div className="">
-              <div className="w-full flex  flex-col gap-8">
+          <div className="grid grid-cols-2 gap-28 w-full">
+            <div className=" flex justify-center items-center">
+              <div className="w-full flex justify-center flex-col gap-8">
                 <div className="">
                   <div className="">
-                    <h3 className="text-7xl text-start">Make </h3>
-                    <p className="text-7xl text-start">remote work</p>
+                    <h3 className="text-7xl text-start font-bold">Make </h3>
+                    <p className="text-7xl text-start font-bold">remote work</p>
                   </div>
                 </div>
                 <div className="flex justify-start items-center w-full">
-                  <div className="w-[500px] flex justify-end items-center">
-                    <p className="text-lg text-start">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Sapiente autem amet eum distinctio, magnam vitae debitis
-                      possimus hic officiis culpa. Numquam exercitationem ullam
-                      vitae veritatis?
+                  <div className="w-[400px] flex justify-end items-center">
+                    <p className="text-lg text-start text-[#adadad]">
+                      Get your team in sync ,no matter your location. Streamline
+                      processes, create team rituals, and watch productivity
+                      soar.
                     </p>
                   </div>
                 </div>
