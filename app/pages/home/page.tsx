@@ -50,7 +50,9 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div>
-                  <Button>Learn more</Button>
+                  <Button className="hover:bg-white hover:text-black">
+                    Learn more
+                  </Button>
                 </div>
                 <div className="flex justify-center items-center gap-8 mt-16 flex-row">
                   <div className="flex justify-center items-center gap-8">

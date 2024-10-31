@@ -50,44 +50,59 @@ export function Header() {
                     <NavigationMenuContent>
                       <ul className="grid gap-3 p-6 w-[150px] justify-center items-center">
                         <li className="flex justify-center items-center gap-4">
-                          <div></div>
-                          <Image
-                            src="/images/icon-todo.svg"
-                            alt="todo"
-                            width={20}
-                            height={30}
-                          />{" "}
-                          <h4 className="">Todo</h4>
+                          <div className="w-full">
+                            <Image
+                              src="/images/icon-todo.svg"
+                              alt="todo"
+                              width={20}
+                              height={30}
+                            />{" "}
+                          </div>
+                          <div className="flex justify-end w-full">
+                            <h4 className="text-center">Todo</h4>
+                          </div>
                         </li>
                         <li className="flex justify-center items-center gap-4">
                           {" "}
-                          <Image
-                            src="/images/icon-calendar.svg"
-                            alt="todo"
-                            width={20}
-                            height={30}
-                          />{" "}
-                          Calendar
+                          <div className="w-full">
+                            <Image
+                              src="/images/icon-calendar.svg"
+                              alt="todo"
+                              width={20}
+                              height={30}
+                            />{" "}
+                          </div>
+                          <div className="flex w-full">
+                            <h4>Calendar</h4>
+                          </div>
                         </li>
                         <li className="flex justify-center items-center gap-4">
                           {" "}
-                          <Image
-                            src="/images/icon-reminders.svg"
-                            alt="todo"
-                            width={20}
-                            height={30}
-                          />
-                          <p> Reminders</p>
+                          <div className="w-full">
+                            <Image
+                              src="/images/icon-reminders.svg"
+                              alt="todo"
+                              width={20}
+                              height={30}
+                            />
+                          </div>
+                          <div>
+                            <p> Reminders</p>
+                          </div>
                         </li>
                         <li className="flex justify-center items-center gap-4">
                           {" "}
-                          <Image
-                            src="/images/icon-planning.svg"
-                            alt="todo"
-                            width={20}
-                            height={30}
-                          />
-                          <p> Planing</p>
+                          <div className="w-full">
+                            <Image
+                              src="/images/icon-planning.svg"
+                              alt="todo"
+                              width={20}
+                              height={30}
+                            />
+                          </div>
+                          <div>
+                            <p> Planing</p>
+                          </div>
                         </li>
                       </ul>
                     </NavigationMenuContent>
@@ -97,7 +112,7 @@ export function Header() {
                       Company
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="grid gap-3 p-6 ">
+                      <ul className="grid gap-3 p-6 w-[150px]">
                         <li>History</li>
                         <li>Our Team</li>
                         <li>Blog</li>
